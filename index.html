@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>ManasAI - Mental Health Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="main-container">
+
+<h1 class="title">🧠 ManasAI</h1>
+<p class="subtitle">AI-Based Mental Health Emotion Analysis</p>
+
+<!-- Upload Section -->
+<div class="card">
+
+<h2>🎧 Upload Audio Recording</h2>
+
+<p>Upload a voice recording to analyze emotional state.</p>
+
+<input type="file" id="audioFile">
+
+<br><br>
+
+<button onclick="analyzeEmotion()" class="btn">
+Analyze Emotion
+</button>
+
+<div id="uploadResult" class="result-box"></div>
+
+</div>
+
+
+<!-- Live Recording Section -->
+<div class="card">
+
+<h2>🎤 Live Voice Recording</h2>
+
+<p>Record your voice and let ManasAI analyze your emotions.</p>
+
+<div class="record-buttons">
+
+<button onclick="startRecording()" class="btn start">
+🎤 Start Recording
+</button>
+
+<button onclick="stopRecording()" class="btn stop">
+⏹ Stop Recording
+</button>
+
+<button onclick="analyzeRecording()" class="btn analyze">
+🧠 Analyze Recording
+</button>
+
+</div>
+
+<div id="liveResult" class="result-box"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
